@@ -1,0 +1,229 @@
+/* =========================================================
+   Basal Strength — Colors + Type tokens
+   Single source of truth. Import anywhere.
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap');
+
+/* Brand-supplied IBM Plex Mono — full family, all weights + italics */
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Thin.ttf') format('truetype'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-ThinItalic.ttf') format('truetype'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-ExtraLight.ttf') format('truetype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-ExtraLightItalic.ttf') format('truetype'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Light.ttf') format('truetype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-LightItalic.ttf') format('truetype'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-MediumItalic.ttf') format('truetype'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-SemiBoldItalic.ttf') format('truetype'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('fonts/IBMPlexMono-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; font-display: swap; }
+
+/* Brand-supplied editorial serif — replaces the Source Serif 4 substitute */
+@font-face {
+  font-family: 'Gelasio';
+  src: url('fonts/Gelasio-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gelasio';
+  src: url('fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Color: foundation ---------- */
+  --bs-ink:        #0B0B10;   /* primary text + dark surface */
+  --bs-paper:      #FFFFFF;   /* primary canvas */
+
+  /* ---------- Color: grey ramp ---------- */
+  --bs-grey-50:    #FAFAFC;
+  --bs-grey-100:   #F1F1F5;
+  --bs-grey-200:   #E4E4EC;
+  --bs-grey-400:   #B5B5C0;
+  --bs-grey-600:   #6E6E7A;
+  --bs-grey-800:   #2A2A33;
+  --bs-grey-900:   #15151B;
+
+  /* ---------- Color: brand accent ---------- */
+  --bs-indigo:        #7B7BFF;   /* primary brand accent */
+  --bs-indigo-soft:   #ECECFF;   /* tinted background */
+  --bs-indigo-deep:   #4F4FCC;   /* hover / pressed */
+
+  /* ---------- Color: semantic ---------- */
+  --bs-success:       #1F8A4C;
+  --bs-success-soft:  #E6F4EC;
+  --bs-warn:          #B26A00;
+  --bs-warn-soft:     #FBF1E0;
+  --bs-alert:         #C41E3A;
+  --bs-alert-soft:    #FBE7EB;
+  --bs-info:          #1151FF;
+
+  /* ---------- Tier colors (clinical findings) ---------- */
+  --bs-tier-1:        #C41E3A;
+  --bs-tier-2:        #B26A00;
+  --bs-tier-3:        #6E6E7A;
+
+  /* ---------- Semantic foreground ---------- */
+  --bs-fg-1:          var(--bs-ink);        /* headings, primary text */
+  --bs-fg-2:          var(--bs-grey-800);   /* body */
+  --bs-fg-3:          var(--bs-grey-600);   /* secondary, captions */
+  --bs-fg-4:          var(--bs-grey-400);   /* disabled, faint */
+  --bs-fg-inverse:    var(--bs-paper);
+
+  /* ---------- Semantic surface ---------- */
+  --bs-surface-1:     var(--bs-paper);
+  --bs-surface-2:     var(--bs-grey-50);
+  --bs-surface-3:     var(--bs-grey-100);
+  --bs-surface-inverse: var(--bs-ink);
+
+  /* ---------- Borders ---------- */
+  --bs-border:        var(--bs-grey-200);
+  --bs-border-strong: var(--bs-grey-600);
+  --bs-border-active: var(--bs-ink);
+
+  /* ---------- Focus ---------- */
+  --bs-focus-ring:    0 0 0 2px rgba(123, 123, 255, 0.5);
+
+  /* ---------- Type families ---------- */
+  --bs-font-display:  'Antonio', 'Futura', Impact, sans-serif;
+  --bs-font-sans:     'Inter Tight', system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  --bs-font-serif:    'Gelasio', Georgia, 'Times New Roman', serif;
+  --bs-font-mono:     'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ---------- Type scale ---------- */
+  --bs-t-display:     96px;
+  --bs-t-display-md:  72px;
+  --bs-t-display-sm:  56px;
+  --bs-t-h1:          32px;
+  --bs-t-h2:          24px;
+  --bs-t-h3:          18px;
+  --bs-t-body:        16px;
+  --bs-t-caption:     13px;
+  --bs-t-eyebrow:     11px;
+  --bs-t-tiny:        10px;
+
+  /* ---------- Spacing (4/8 grid) ---------- */
+  --bs-space-1:  4px;
+  --bs-space-2:  8px;
+  --bs-space-3:  12px;
+  --bs-space-4:  16px;
+  --bs-space-5:  20px;
+  --bs-space-6:  24px;
+  --bs-space-7:  32px;
+  --bs-space-8:  48px;
+  --bs-space-9:  64px;
+  --bs-space-10: 80px;
+
+  /* ---------- Radii ---------- */
+  --bs-radius-0:    0px;
+  --bs-radius-sm:   4px;
+  --bs-radius-md:   8px;
+  --bs-radius-lg:   12px;
+  --bs-radius-xl:   16px;
+  --bs-radius-pill: 999px;
+
+  /* ---------- Motion ---------- */
+  --bs-ease:        cubic-bezier(0.2, 0, 0, 1);
+  --bs-dur-fast:    120ms;
+  --bs-dur:         200ms;
+  --bs-dur-slow:    400ms;
+}
+
+/* =========================================================
+   Semantic element styles — drop straight onto raw HTML.
+   ========================================================= */
+
+.bs-display {
+  font-family: var(--bs-font-display);
+  font-weight: 600;
+  font-size: var(--bs-t-display);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--bs-fg-1);
+}
+
+.bs-h1 {
+  font-family: var(--bs-font-sans);
+  font-weight: 600;
+  font-size: var(--bs-t-h1);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--bs-fg-1);
+}
+
+.bs-h2 {
+  font-family: var(--bs-font-sans);
+  font-weight: 600;
+  font-size: var(--bs-t-h2);
+  line-height: 1.20;
+  letter-spacing: -0.01em;
+  color: var(--bs-fg-1);
+}
+
+.bs-h3 {
+  font-family: var(--bs-font-sans);
+  font-weight: 600;
+  font-size: var(--bs-t-h3);
+  line-height: 1.30;
+  color: var(--bs-fg-1);
+}
+
+.bs-body {
+  font-family: var(--bs-font-sans);
+  font-weight: 400;
+  font-size: var(--bs-t-body);
+  line-height: 1.65;
+  color: var(--bs-fg-2);
+}
+
+.bs-body-medium {
+  font-family: var(--bs-font-sans);
+  font-weight: 500;
+  font-size: var(--bs-t-body);
+  line-height: 1.65;
+  color: var(--bs-fg-1);
+}
+
+.bs-caption {
+  font-family: var(--bs-font-sans);
+  font-weight: 500;
+  font-size: var(--bs-t-caption);
+  line-height: 1.45;
+  color: var(--bs-fg-3);
+}
+
+.bs-eyebrow {
+  font-family: var(--bs-font-mono);
+  font-weight: 500;
+  font-size: var(--bs-t-eyebrow);
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bs-fg-3);
+}
+
+.bs-mono {
+  font-family: var(--bs-font-mono);
+  font-weight: 400;
+  font-size: var(--bs-t-caption);
+  line-height: 1.5;
+  color: var(--bs-fg-2);
+}
+
+.bs-editorial {
+  font-family: var(--bs-font-serif);
+  font-weight: 400;
+  font-size: var(--bs-t-body);
+  line-height: 1.7;
+  color: var(--bs-fg-2);
+}
