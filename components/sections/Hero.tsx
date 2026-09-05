@@ -1,123 +1,81 @@
-import { Button } from "../ui/Button";
-
-const scoreRows = [
-  { label: "Grip — bilateral", value: "126", status: "good", width: "57.3%" },
-  { label: "Lower body — hinge", value: "112", status: "good", width: "50.9%" },
-  { label: "Eccentric absorption — knee", value: "71", status: "warn", width: "32.3%" },
-  { label: "Upper body — pull", value: "104", status: "good", width: "47.3%" },
-  { label: "Trunk — anti-rotation", value: "88", status: "warn", width: "40%" },
-];
-
 export function Hero() {
   return (
-    <section className="overflow-hidden bg-[var(--bs-ink)] text-white">
-      <div className="mx-auto max-w-7xl px-6 md:px-12">
-        <div className="grid items-center gap-16 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:py-24">
-          <div>
-            <div className="bs-mono text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--bs-indigo)]">
-              Strength diagnostics · Austin, TX · By appointment
-            </div>
+    <header className="overflow-hidden bg-[var(--bs-ink)] text-white">
+      <div className="mx-auto max-w-[1200px] px-8 pb-16 pt-[84px] max-sm:px-[18px]">
+        <div
+          className="flex items-center gap-5 uppercase text-[clamp(34px,4.6vw,60px)] font-bold leading-none tracking-[0.02em] text-white"
+          style={{
+            fontFamily: "var(--font-antonio), Antonio, sans-serif",
+          }}
+        >
+          <svg
+            viewBox="0 0 253 294.5"
+            aria-hidden="true"
+            className="h-[clamp(44px,5.4vw,72px)] w-auto shrink-0"
+          >
+            <g fill="#7B7BFF">
+              <path d="M126.5 0 L253 87 L253 117.5 L126 205 L126 159.5 L209.1 102.5 L126.5 45.4 L0 132 L0 87 Z" />
+              <path d="M126.5 294.5 L0 207.5 L0 177 L127 89.5 L127 135 L43.9 192 L126.5 249.1 L253 162.5 L253 207.5 Z" />
+            </g>
+          </svg>
 
-            <h1 className="bs-display mt-7 text-[clamp(4.5rem,8.5vw,7.4rem)] text-white">
-              The body
-              <br />
-              you want
-              <br />
-              to <span className="text-[var(--bs-indigo)]">keep using.</span>
-            </h1>
-
-            <p className="mt-8 max-w-[620px] text-[18px] font-medium leading-[1.55] text-[var(--bs-grey-400)]">
-              An assessment-driven strength practice for athletes, returning
-              movers, and longevity-focused adults.{" "}
-              <strong className="font-semibold text-white">
-                We measure what you have, name the floor you need, and build the
-                smallest training plan that closes the gap.
-              </strong>
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="#assessment" variant="accent">
-                Book your assessment →
-              </Button>
-
-              <a
-                href="#method"
-                className="inline-flex items-center justify-center rounded-full border border-white/25 px-5 py-2.5 text-sm font-medium text-white transition-colors duration-200 hover:border-white/70 hover:bg-white/5"
-              >
-                See the method
-              </a>
-            </div>
-          </div>
-
-          <div className="border border-[var(--bs-grey-800)] bg-[var(--bs-grey-900)] p-7 transition-transform duration-300 hover:-translate-y-1">
-            <div className="mb-2 flex items-baseline justify-between">
-              <div className="text-[15px] font-semibold text-white">
-                Client · J.D. — 38 yo
-              </div>
-
-              <div className="bs-mono rounded bg-[var(--bs-indigo)] px-2 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white">
-                Tier 1
-              </div>
-            </div>
-
-            <div className="bs-mono mb-6 text-[11px] tracking-[0.04em] text-[var(--bs-grey-400)]">
-              Force capacity vs. activity floor · 5 categories
-            </div>
-
-            {scoreRows.map((row) => (
-              <div
-                key={row.label}
-                className="border-b border-[var(--bs-grey-800)] py-4 last:border-b-0 last:pb-0"
-              >
-                <div className="mb-2 flex items-baseline justify-between gap-4">
-                  <div className="text-[13px] font-medium text-white">
-                    {row.label}
-                  </div>
-
-                  <div className="bs-mono text-sm font-semibold text-white">
-                    {row.value}{" "}
-                    <span className="font-normal text-[var(--bs-grey-600)]">
-                      ÷ 100
-                    </span>
-                  </div>
-                </div>
-
-                <div className="relative h-1.5 overflow-hidden rounded-full bg-[var(--bs-grey-800)]">
-                  <div
-                    className={`absolute left-0 top-0 h-full rounded-full transition-all duration-700 ease-out ${
-                      row.status === "warn"
-                        ? "bg-[var(--bs-warn)]"
-                        : "bg-[var(--bs-indigo)]"
-                    }`}
-                    style={{ width: row.width }}
-                  />
-
-                  <div className="absolute bottom-[-3px] top-[-3px] left-[45.45%] w-px bg-white" />
-                </div>
-              </div>
-            ))}
-          </div>
+          <span>
+            Basal{" "}
+            <span className="font-normal text-[var(--bs-grey-400)]">
+              Strength
+            </span>
+          </span>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-6 border-t border-[var(--bs-grey-800)] py-5 bs-mono text-[10.5px] uppercase tracking-[0.22em] text-[var(--bs-grey-600)]">
-          <div>
-            <span className="text-white">1,400+</span> assessments delivered since 2019
-          </div>
+        <span className="mt-4 block font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--bs-indigo)]">
+          Strength assessment · Austin, Texas
+        </span>
 
-          <div>
-            Concierge model · <span className="text-white">1:1 only</span>
-          </div>
+        <h1
+          className="mt-[18px] max-w-[18ch] uppercase text-[clamp(38px,5.2vw,72px)] font-semibold leading-[0.95] tracking-[-0.01em] text-white"
+          style={{
+            fontFamily: "var(--font-antonio), Antonio, sans-serif",
+          }}
+        >
+          Will my body keep up with the life I want to live?
+        </h1>
 
-          <div>
-            Founded by <span className="text-white">Fayaz Jaffer</span>
-          </div>
+        <div className="mt-[34px] flex max-w-[64ch] flex-col gap-[14px] text-[17px] leading-[1.6] text-[var(--bs-grey-200)]">
+          <p>
+            We measure how strong you are, define how strong you need to be for
+            the life you want, and hand you the roadmap to get to where you want
+            to be. The answer is not one score but three things: where you
+            stand, what is in the way, and what to work on before anything else.
+          </p>
 
-          <div>
-            Partnered with <span className="text-white">RiverRock Medical</span> &amp;{" "}
-            <span className="text-white">The Michanic Shop</span>
-          </div>
+          <p>
+            Sometimes there is no gap. Then the answer is validation: you are
+            where you need to be, and what to hold to stay there. That is worth
+            measuring rather than assuming.
+          </p>
+
+          <p>Then we set a date and measure again.</p>
+        </div>
+
+        <div className="mt-[34px]">
+          <a
+            href="#contact"
+            className="inline-block border border-[var(--bs-indigo)] bg-[var(--bs-indigo)] px-[22px] py-[14px] font-mono text-[12px] font-medium uppercase tracking-[0.1em] text-[var(--bs-ink)] transition-colors hover:bg-[#8f8fff]"
+          >
+            Book an assessment
+          </a>
+        </div>
+
+        <div className="mt-[52px] flex flex-wrap gap-x-[30px] gap-y-2 border-t border-[var(--bs-grey-800)] pt-[22px] font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--bs-grey-600)]">
+          <span>
+            VALD force plates · velocity-based lifting · DEXA · dynamometry
+          </span>
+
+          <span>
+            Developed with a longevity physician · in use in his Austin practice
+          </span>
         </div>
       </div>
-    </section>
+    </header>
   );
 }

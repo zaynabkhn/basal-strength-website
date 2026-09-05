@@ -1,0 +1,38 @@
+<svg class="rateschart" viewBox="0 0 820 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative chart: four lines for power, expressed force, maximal force and muscle mass, all holding through the thirties, declining from the forties at different rates, and steeper after seventy. Power falls fastest, muscle mass slowest.">
+<rect width="820" height="440" rx="6" fill="#ffffff"/>
+<text x="40" y="46" font-family="'Antonio',Impact,'Arial Narrow',sans-serif" font-size="34" font-weight="600" fill="#15151b" style="text-transform:uppercase;letter-spacing:-.01em">Four parts, four rates.</text>
+<text x="40" y="72" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14.5" fill="#6f6f80">Illustrative. The order is what is measured; the shapes are not to scale.</text>
+<rect x="60.0" y="104" width="106.0" height="268" fill="#f4f4f8"/>
+<text x="113.0" y="96" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" letter-spacing="1.5" fill="#6f6f80">HOLDING</text>
+<rect x="166.0" y="104" width="318.0" height="268" fill="#ececf2"/>
+<text x="325.0" y="96" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" letter-spacing="1.5" fill="#6f6f80">DECLINING</text>
+<rect x="484.0" y="104" width="106.0" height="268" fill="#e2e2ea"/>
+<text x="537.0" y="96" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" letter-spacing="1.5" fill="#6f6f80">STEEPER</text>
+<line x1="60" y1="372" x2="590" y2="372" stroke="#dcdce6" stroke-width="1"/>
+<text x="60.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">30</text>
+<text x="166.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">40</text>
+<text x="272.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">50</text>
+<text x="378.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">60</text>
+<text x="484.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">70</text>
+<text x="590.0" y="392" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">80</text>
+<text x="52" y="118" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" fill="#6f6f80" dy="4">PEAK</text>
+<line x1="60" y1="118.0" x2="590" y2="118.0" stroke="#dcdce6" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="325.0" y="412" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" letter-spacing="1.5" fill="#6f6f80">AGE</text>
+<polyline points="60.0,118.0 70.6,118.0 81.2,118.0 91.8,118.0 102.4,118.0 113.0,118.0 123.6,118.0 134.2,118.0 144.8,118.0 155.4,118.0 166.0,118.0 176.6,122.8 187.2,127.6 197.8,132.4 208.4,137.3 219.0,142.1 229.6,146.9 240.2,151.7 250.8,156.5 261.4,161.3 272.0,166.1 282.6,170.9 293.2,175.8 303.8,180.6 314.4,185.4 325.0,190.2 335.6,195.0 346.2,199.8 356.8,204.6 367.4,209.4 378.0,214.3 388.6,219.1 399.2,223.9 409.8,228.7 420.4,233.5 431.0,238.3 441.6,243.1 452.2,247.9 462.8,252.8 473.4,257.6 484.0,262.4 494.6,272.0 505.2,281.6 515.8,291.3 526.4,300.9 537.0,310.5 547.6,320.1 558.2,329.8 568.8,339.4 579.4,349.0 590.0,358.6" fill="none" stroke="#4f4fcc" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="590.0" cy="358.6" r="4" fill="#4f4fcc"/>
+<text x="602.0" y="358.6" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#4f4fcc" dy="5">Power</text>
+<text x="602.0" y="358.6" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="11.5" fill="#6f6f80" dy="21">fastest to go</text>
+<polyline points="60.0,118.0 70.6,118.0 81.2,118.0 91.8,118.0 102.4,118.0 113.0,118.0 123.6,118.0 134.2,118.0 144.8,118.0 155.4,118.0 166.0,118.0 176.6,121.2 187.2,124.4 197.8,127.6 208.4,130.8 219.0,134.0 229.6,137.3 240.2,140.5 250.8,143.7 261.4,146.9 272.0,150.1 282.6,153.3 293.2,156.5 303.8,159.7 314.4,162.9 325.0,166.1 335.6,169.3 346.2,172.5 356.8,175.8 367.4,179.0 378.0,182.2 388.6,185.4 399.2,188.6 409.8,191.8 420.4,195.0 431.0,198.2 441.6,201.4 452.2,204.6 462.8,207.8 473.4,211.0 484.0,214.3 494.6,220.7 505.2,227.1 515.8,233.5 526.4,239.9 537.0,246.3 547.6,252.8 558.2,259.2 568.8,265.6 579.4,272.0 590.0,278.4" fill="none" stroke="#7b7bff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="590.0" cy="278.4" r="4" fill="#7b7bff"/>
+<text x="602.0" y="278.4" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#7b7bff" dy="5">Expressed force</text>
+<text x="602.0" y="278.4" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="11.5" fill="#6f6f80" dy="21">goes before maximal force</text>
+<polyline points="60.0,118.0 70.6,118.0 81.2,118.0 91.8,118.0 102.4,118.0 113.0,118.0 123.6,118.0 134.2,118.0 144.8,118.0 155.4,118.0 166.0,118.0 176.6,120.1 187.2,122.3 197.8,124.4 208.4,126.6 219.0,128.7 229.6,130.8 240.2,133.0 250.8,135.1 261.4,137.3 272.0,139.4 282.6,141.5 293.2,143.7 303.8,145.8 314.4,147.9 325.0,150.1 335.6,152.2 346.2,154.4 356.8,156.5 367.4,158.6 378.0,160.8 388.6,162.9 399.2,165.1 409.8,167.2 420.4,169.3 431.0,171.5 441.6,173.6 452.2,175.8 462.8,177.9 473.4,180.0 484.0,182.2 494.6,186.4 505.2,190.7 515.8,195.0 526.4,199.3 537.0,203.6 547.6,207.8 558.2,212.1 568.8,216.4 579.4,220.7 590.0,224.9" fill="none" stroke="#8a8a9e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="590.0" cy="224.9" r="4" fill="#8a8a9e"/>
+<text x="602.0" y="224.9" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#8a8a9e" dy="5">Maximal force</text>
+<text x="602.0" y="224.9" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="11.5" fill="#6f6f80" dy="21">falls faster than mass</text>
+<polyline points="60.0,118.0 70.6,118.0 81.2,118.0 91.8,118.0 102.4,118.0 113.0,118.0 123.6,118.0 134.2,118.0 144.8,118.0 155.4,118.0 166.0,118.0 176.6,119.1 187.2,120.1 197.8,121.2 208.4,122.3 219.0,123.3 229.6,124.4 240.2,125.5 250.8,126.6 261.4,127.6 272.0,128.7 282.6,129.8 293.2,130.8 303.8,131.9 314.4,133.0 325.0,134.0 335.6,135.1 346.2,136.2 356.8,137.3 367.4,138.3 378.0,139.4 388.6,140.5 399.2,141.5 409.8,142.6 420.4,143.7 431.0,144.7 441.6,145.8 452.2,146.9 462.8,147.9 473.4,149.0 484.0,150.1 494.6,152.2 505.2,154.4 515.8,156.5 526.4,158.6 537.0,160.8 547.6,162.9 558.2,165.1 568.8,167.2 579.4,169.3 590.0,171.5" fill="none" stroke="#15151b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="590.0" cy="171.5" r="4" fill="#15151b"/>
+<text x="602.0" y="171.5" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#15151b" dy="5">Muscle mass</text>
+<text x="602.0" y="171.5" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="11.5" fill="#6f6f80" dy="21">slowest to go</text>
+<text x="40" y="428" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" fill="#6f6f80">Phases from the published trajectory: holding to 40, declining 40 to 70, steeper after 70.</text>
+</svg>

@@ -1,47 +1,35 @@
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--bs-border)] bg-[var(--bs-grey-100)]">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-        
-        <div className="max-w-[540px]">
-          <p className="bs-mono text-[11px] uppercase tracking-[0.22em] text-[var(--bs-grey-600)]">
-            Basal Strength
-          </p>
+    <footer className="bg-[var(--bs-ink)] text-[var(--bs-grey-600)]">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap items-baseline justify-between gap-x-11 gap-y-4 px-8 py-11 max-sm:px-[18px]">
+        <div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/handoff/basal-mark.svg"
+              alt=""
+              className="h-7 w-7"
+            />
 
-          <p className="mt-5 text-[22px] leading-[1.45] tracking-[-0.03em] text-[var(--bs-ink)]">
-            Assessment-driven performance diagnostics for athletes,
-            longevity-focused adults, and returning movers.
-          </p>
+            <div
+              className="text-[26px] uppercase leading-none tracking-[-0.02em]"
+              style={{
+                fontFamily: "var(--font-antonio), Antonio, sans-serif",
+              }}
+            >
+              <span className="font-semibold text-white">Basal</span>{" "}
+              <span className="text-[var(--bs-grey-600)]">Strength</span>
+            </div>
+          </div>
 
-          <p className="mt-5 text-[16px] text-[var(--bs-grey-700)]">
-            Austin, Texas
-          </p>
-        </div>
-
-        <div className="flex flex-col items-start gap-2 lg:items-end">
-          <p className="bs-mono text-[11px] uppercase tracking-[0.22em] text-[var(--bs-grey-600)]">
-            By appointment only
-          </p>
-
-          <a
-            href="#assessment"
-            className="text-[15px] font-medium text-[var(--bs-ink)] transition-all duration-300 hover:text-[var(--bs-indigo)] hover:translate-x-1"
-          >
-            Book an assessment →
-          </a>
-        </div>
-      </div>
-
-      <div className="border-t border-[var(--bs-border)]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
-          <p className="bs-mono text-[11px] uppercase tracking-[0.22em] text-[var(--bs-grey-600)]">
-            © 2026 Basal Strength
-          </p>
-
-          <p className="bs-mono text-[11px] uppercase tracking-[0.22em] text-[var(--bs-grey-600)]">
-            Austin, TX
+          <p className="mt-[10px] max-w-[44ch] text-[14px] leading-[1.55] text-[var(--bs-grey-400)]">
+            Strength assessment for adults who intend to keep doing what they
+            do. Austin, Texas.
           </p>
         </div>
+
+        <span className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--bs-grey-600)]">
+          © 2026 Basal Strength · Austin, TX · By appointment
+        </span>
       </div>
     </footer>
   );

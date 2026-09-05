@@ -1,0 +1,71 @@
+<svg class="legchart" viewBox="0 0 820 840" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two line charts, one per leg, showing percent change from November 2025 in leg lean mass and in force. Muscle fell on both legs while force rose on both.">
+<rect width="820" height="840" rx="6" fill="#0b0b10"/>
+<text x="44" y="56" font-family="'Antonio',Impact,'Arial Narrow',sans-serif" font-size="40" font-weight="600" fill="#ececff" style="text-transform:uppercase;letter-spacing:-.01em">Muscle and force do not move together.</text>
+<text x="44" y="86" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="16" fill="#a3a3b3">My legs, November 2025 to August 2026. Muscle down on both. Force up on both.</text>
+<line x1="44" y1="116" x2="78" y2="116" stroke="#ececff" stroke-width="3" stroke-linecap="round"/>
+<text x="86" y="116" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="13" fill="#a3a3b3" dy="4">Muscle &#183; leg lean mass, DEXA</text>
+<line x1="334" y1="116" x2="368" y2="116" stroke="#7b7bff" stroke-width="3.5" stroke-dasharray="1 8" stroke-linecap="round"/>
+<text x="376" y="116" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="13" fill="#a3a3b3" dy="4">Force &#183; peak force, dynamometer</text>
+<rect x="640" y="110" width="22" height="12" fill="#26262f" opacity=".55"/>
+<text x="668" y="116" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="13" fill="#a3a3b3" dy="4">Tear to surgery</text>
+<text x="84" y="172" font-family="'Antonio',Impact,'Arial Narrow',sans-serif" font-size="24" font-weight="600" fill="#ececff" style="text-transform:uppercase;letter-spacing:.02em">Left leg</text>
+<rect x="276.6" y="190" width="40.2" height="230" fill="#26262f" opacity=".55"/>
+<line x1="84" y1="397.0" x2="740" y2="397.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="397.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">-15%</text>
+<line x1="84" y1="328.0" x2="740" y2="328.0" stroke="#a3a3b3" stroke-width="1.5"/>
+<text x="74" y="328.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">0%</text>
+<line x1="84" y1="259.0" x2="740" y2="259.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="259.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">+15%</text>
+<line x1="84" y1="190.0" x2="740" y2="190.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="190.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">+30%</text>
+<text x="84.0" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Nov</text>
+<text x="213.1" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Jan</text>
+<text x="337.9" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Mar</text>
+<text x="467.0" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">May</text>
+<text x="596.1" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Jul</text>
+<text x="727.3" y="440" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Sep</text>
+<polyline points="88.2,328.0 289.3,350.1 505.1,391.0 699.8,363.4" fill="none" stroke="#ececff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.2" cy="328.0" r="4.5" fill="#ececff"/>
+<circle cx="289.3" cy="350.1" r="4.5" fill="#ececff"/>
+<circle cx="505.1" cy="391.0" r="4.5" fill="#ececff"/>
+<circle cx="699.8" cy="363.4" r="4.5" fill="#ececff"/>
+<polyline points="124.2,328.0 412.0,399.3 562.2,367.1 625.7,331.7 699.8,313.7" fill="none" stroke="#7b7bff" stroke-width="3.5" stroke-dasharray="1 8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="124.2" cy="328.0" r="4.5" fill="#7b7bff"/>
+<circle cx="412.0" cy="399.3" r="4.5" fill="#7b7bff"/>
+<circle cx="562.2" cy="367.1" r="4.5" fill="#7b7bff"/>
+<circle cx="625.7" cy="331.7" r="4.5" fill="#7b7bff"/>
+<circle cx="699.8" cy="313.7" r="4.5" fill="#7b7bff"/>
+<text x="711.8" y="363.4" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#ececff" dy="5">Muscle -8% <tspan font-weight="400" fill="#a3a3b3">(Aug)</tspan></text>
+<text x="711.8" y="313.7" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#7b7bff" dy="5">Force +3% <tspan font-weight="400" fill="#a3a3b3">(Aug)</tspan></text>
+<text x="412.0" y="419.3" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11.5" fill="#a3a3b3">-16% &#183; Apr 5</text>
+<text x="84" y="502" font-family="'Antonio',Impact,'Arial Narrow',sans-serif" font-size="24" font-weight="600" fill="#ececff" style="text-transform:uppercase;letter-spacing:.02em">Right leg</text>
+<rect x="276.6" y="520" width="40.2" height="230" fill="#26262f" opacity=".55"/>
+<line x1="84" y1="727.0" x2="740" y2="727.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="727.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">-15%</text>
+<line x1="84" y1="658.0" x2="740" y2="658.0" stroke="#a3a3b3" stroke-width="1.5"/>
+<text x="74" y="658.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">0%</text>
+<line x1="84" y1="589.0" x2="740" y2="589.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="589.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">+15%</text>
+<line x1="84" y1="520.0" x2="740" y2="520.0" stroke="#26262f" stroke-width="1"/>
+<text x="74" y="520.0" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80" dy="4">+30%</text>
+<text x="84.0" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Nov</text>
+<text x="213.1" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Jan</text>
+<text x="337.9" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Mar</text>
+<text x="467.0" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">May</text>
+<text x="596.1" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Jul</text>
+<text x="727.3" y="770" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Sep</text>
+<polyline points="88.2,658.0 289.3,681.5 505.1,685.1 699.8,671.8" fill="none" stroke="#ececff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.2" cy="658.0" r="4.5" fill="#ececff"/>
+<circle cx="289.3" cy="681.5" r="4.5" fill="#ececff"/>
+<circle cx="505.1" cy="685.1" r="4.5" fill="#ececff"/>
+<circle cx="699.8" cy="671.8" r="4.5" fill="#ececff"/>
+<polyline points="124.2,658.0 412.0,653.4 562.2,548.5 625.7,548.5" fill="none" stroke="#7b7bff" stroke-width="3.5" stroke-dasharray="1 8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="124.2" cy="658.0" r="4.5" fill="#7b7bff"/>
+<circle cx="412.0" cy="653.4" r="4.5" fill="#7b7bff"/>
+<circle cx="562.2" cy="548.5" r="4.5" fill="#7b7bff"/>
+<circle cx="625.7" cy="548.5" r="4.5" fill="#7b7bff"/>
+<text x="711.8" y="671.8" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#ececff" dy="5">Muscle -3% <tspan font-weight="400" fill="#a3a3b3">(Aug)</tspan></text>
+<text x="637.7" y="548.5" font-family="'Inter Tight','IBM Plex Sans',system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#7b7bff" dy="5">Force +24% <tspan font-weight="400" fill="#a3a3b3">(Jul)</tspan></text>
+<text x="44" y="796" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">Percent change from each leg&#8217;s own November numbers. Tear Jan 31, surgery Feb 19.</text>
+<text x="44" y="816" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" fill="#6f6f80">DEXA: Nov 3, Feb 6, May 19, Aug 19. Dynamometer: Nov 20, Apr 5, mid-June, Jul 15, Aug 19. Right leg not tested in August.</text>
+</svg>

@@ -5,7 +5,7 @@ import { WhatWeDo } from "@/components/sections/WhatWeDo";
 import { PartnerEcosystem } from "@/components/sections/PartnerEcosystem";
 import { AssessmentProcess } from "@/components/sections/AssessmentProcess";
 import { VisualSummary } from "@/components/sections/VisualSummary";
-import { Founder } from "@/components/sections/Founder";
+import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 
@@ -13,14 +13,18 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Premise />
-      <WhatWeDo />
-      <PartnerEcosystem />
-      <AssessmentProcess />
-      <VisualSummary />
-      <Founder />
-      <Contact />
+
+      <main>
+        <Hero />
+        <Premise />
+        <WhatWeDo />
+        <PartnerEcosystem />
+        <AssessmentProcess />
+        <VisualSummary />
+        <FAQ />
+        <Contact />
+      </main>
+
       <Footer />
     </>
   );

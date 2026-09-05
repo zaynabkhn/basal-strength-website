@@ -1,146 +1,211 @@
-const forceRows = [
+import Image from "next/image";
+
+const dimensions = [
   {
     number: "01",
-    title: "Grip — bilateral isometric",
+    title: "Power",
+    question: "How fast you can produce force.",
     description:
-      "The strongest single predictor of all-cause mortality risk after age 50. Measured both hands, dominant deficit flagged at >10%.",
-    meta: "Tool · Handheld dynamometer · Floor · Dodds 2014",
-    retest: "Retest · Week 12",
-    badge: "Above floor",
-    tone: "good",
+      "You jump, and you land. The plate records both: how quickly you produced force on the way up, and how well you absorbed it coming down.",
+    rate: "Fastest to go · it's what catches you when you trip",
+    icon: "/handoff/icons/icon-power.svg",
   },
   {
     number: "02",
-    title: "Lower body — hip hinge force",
+    title: "Maximal force",
+    question: "The most force your muscles can produce.",
     description:
-      "Isometric mid-thigh pull, ratio to body weight. The single largest lever for hip- and knee-driven sport.",
-    meta: "Tool · IMTP plate · Floor · 2.5× BW recreational",
-    retest: "Retest · Week 12",
-    badge: "Above floor",
-    tone: "good",
+      "You pull or push against something that does not move, standing on a plate that records what you produced. Each leg alone, then both together. Technique is taken out of it, so the number is the muscle and not the lift.",
+    rate: "Falls faster than mass",
+    icon: "/handoff/icons/icon-maximal-force.svg",
   },
   {
     number: "03",
-    title: "Eccentric absorption — knee",
+    title: "Expressed force",
+    question: "The force you can actually put into a movement.",
     description:
-      "The capacity to brake load on a single leg. Quality deficit here is the convergent finding in nearly every returning athlete we see.",
-    meta: "Tool · Nordic + decline ISO · Floor · Sport-matched",
-    retest: "Retest · Week 8",
-    badge: "Develop",
-    tone: "warn",
+      "We read it from how fast the bar moves under load, so nobody has to attempt a true maximum to find out what their maximum is. If this number sits well under the one above it, you have force you are not using. That is trainable.",
+    rate: "Usually goes before maximal force",
+    icon: "/handoff/icons/icon-expressed-force.svg",
   },
   {
     number: "04",
-    title: "Upper body — push & pull",
+    title: "Muscle mass",
+    question: "How much muscle you carry.",
     description:
-      "Horizontal and vertical, both directions. Pull bias is the longevity gate; push capacity tracks tightly with throwing and grappling sports.",
-    meta: "Tool · 1RM proxy · Floor · 1.0–1.5× BW",
-    retest: "Retest · Week 12",
-    badge: "Above floor",
-    tone: "good",
-  },
-  {
-    number: "05",
-    title: "Trunk — anti-rotation & anti-extension",
-    description:
-      "The quiet ceiling on everything overhead and everything reactive. We measure it isometrically, with the breath under load.",
-    meta: "Tool · Pallof + dead-bug ISO · Floor · Sport-matched",
-    retest: "Retest · Week 8",
-    badge: "Monitor",
-    tone: "neutral",
+      "A DEXA scan, region by region, left against right. It also does a second job. If one side is weaker but carries the same muscle, the weakness is not the muscle.",
+    rate: "Slowest to go · the only one you can see",
+    icon: "/handoff/icons/icon-muscle-mass.svg",
   },
 ];
 
 export function PartnerEcosystem() {
   return (
     <section
-      id="forces"
-      className="border-b border-[var(--bs-border)] bg-[var(--bs-grey-50)]"
+      id="measure"
+      className="border-b border-[var(--bs-grey-200)] bg-[var(--bs-g50)]"
     >
-      <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[0.72fr_1.28fr] lg:px-12">
-        <div>
-          <p className="bs-eyebrow mb-7 text-[var(--bs-indigo)]">
-            § 03 · The five forces
+      <div className="mx-auto max-w-[1200px] px-8 py-20 md:py-24 max-sm:px-[18px]">
+        <span className="font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--bs-grey-600)]">
+          § 03 · What we measure
+        </span>
+
+        <h2
+          className="mt-6 max-w-[19ch] uppercase text-[clamp(38px,5vw,64px)] font-semibold leading-[0.98] tracking-[-0.02em] text-[var(--bs-ink)]"
+          style={{
+            fontFamily: "var(--font-antonio), Antonio, sans-serif",
+          }}
+        >
+          Strength is four separate things.
+        </h2>
+
+        <div className="mt-8 max-w-[760px]">
+          <p className="text-[20px] font-medium leading-[1.65] text-[var(--bs-ink)]">
+            Force is two of the four. There is the force your muscles can
+            produce, and the force you actually put into a movement. They are
+            not the same number, and the difference is worth knowing.
           </p>
+        </div>
 
-          <h2 className="bs-display text-[clamp(3.2rem,5.8vw,5.8rem)] leading-[0.9] tracking-[-0.045em] text-[var(--bs-ink)]">
-            Five
-            <br />
-            categories.
-            <br />
-            one{" "}
-            <span className="text-[var(--bs-indigo)]">floor.</span>
-          </h2>
+        <div className="mt-12 border-t border-[var(--bs-ink)]">
+          {dimensions.map((item) => (
+            <article
+              key={item.number}
+              className="grid gap-6 border-b border-[var(--bs-grey-200)] py-7 lg:grid-cols-[96px_300px_1fr_220px] lg:items-start"
+            >
+              <div className="flex items-start gap-5 lg:flex-col lg:gap-3">
+                <span
+                  className="text-[34px] font-semibold leading-none text-[var(--bs-grey-400)]"
+                  style={{
+                    fontFamily: "var(--font-antonio), Antonio, sans-serif",
+                  }}
+                >
+                  {item.number}
+                </span>
 
-          <p className="mt-8 max-w-[420px] text-[16px] leading-[1.75] text-[var(--bs-grey-800)]">
-            Every assessment scores five force categories against the floor your
-            activities demand. The floor is sourced — bodyweight multiples for
-            lifts, sport-specific norms for athletes, longevity floors for the
-            rest.
-          </p>
+                <Image
+                  src={item.icon}
+                  alt=""
+                  width={56}
+                  height={56}
+                  className="h-14 w-14"
+                />
+              </div>
 
-          <p className="mt-6 max-w-[420px] text-[15px] leading-[1.7] text-[var(--bs-grey-800)]">
-            <strong className="text-[var(--bs-ink)]">Above floor</strong> is a
-            green light. <strong className="text-[var(--bs-ink)]">Develop</strong>{" "}
-            means the gap is mechanical and trainable.{" "}
-            <strong className="text-[var(--bs-ink)]">Monitor</strong> means the
-            number is close to threshold and we want to retest it.
-          </p>
+              <div>
+                <h3 className="text-[24px] font-semibold leading-tight tracking-[-0.02em] text-[var(--bs-ink)]">
+                  {item.title}
+                </h3>
 
-          <div className="mt-8 max-w-[360px] border-l-2 border-[var(--bs-indigo)] bg-white p-6">
-            <p className="bs-mono text-[13px] font-semibold text-[var(--bs-ink)]">
-              score = measured ÷ floor × 100
+                <p
+                  className="mt-1 text-[16px] italic leading-[1.5] text-[var(--bs-grey-600)]"
+                  style={{
+                    fontFamily:
+                      "var(--font-gelasio), Gelasio, Georgia, serif",
+                  }}
+                >
+                  {item.question}
+                </p>
+              </div>
+
+              <p className="max-w-[58ch] text-[15px] leading-[1.65] text-[var(--bs-grey-600)]">
+                {item.description}
+              </p>
+
+              <span className="justify-self-start bg-[var(--bs-indigo-soft)] px-3 py-2 font-mono text-[10.5px] uppercase tracking-[0.08em] text-[var(--bs-indigo-deep)]">
+                {item.rate}
+              </span>
+            </article>
+          ))}
+        </div>
+
+        <figure className="mt-10 max-w-[850px]">
+          <Image
+            src="/handoff/chart-four-parts-four-rates.svg"
+            alt="Illustrative chart showing power, expressed force, maximal force, and muscle mass changing with age at different rates."
+            width={850}
+            height={456}
+            className="h-auto w-full rounded-md border border-[var(--bs-grey-200)]"
+          />
+
+          <figcaption className="mt-3 font-mono text-[11px] tracking-[0.04em] text-[var(--bs-grey-600)]">
+            Illustrative. Four parts of strength against age, drawn in the
+            order the cards describe. Not measured curves.
+          </figcaption>
+        </figure>
+
+        <div className="mt-14 max-w-[760px]">
+          <h3
+            className="uppercase text-[clamp(28px,3vw,38px)] font-semibold leading-none text-[var(--bs-ink)]"
+            style={{
+              fontFamily: "var(--font-antonio), Antonio, sans-serif",
+            }}
+          >
+            The limiters
+          </h3>
+
+          <div className="mt-5 space-y-5 text-[16px] leading-[1.65] text-[var(--bs-grey-800)]">
+            <p>
+              Behind the four numbers sit the reasons they came out where they
+              did. A hip that will not rotate. An ankle that will not bend. One
+              side steadier than the other. Not a fifth part of strength, but
+              the explanation for the other four, and often the first thing
+              worth working on.
             </p>
 
-            <p className="bs-mono mt-4 text-[13px] text-[var(--bs-grey-600)]">
-              floor sourced per activity &amp; per decade
+            <p className="font-medium text-[var(--bs-ink)]">
+              Together, the four form the layer everything you love stands on.
+              Medicine already has a word for it: basal. The level underneath,
+              the one that has to be there before anything built on it holds.
+              It is where the name comes from.
+            </p>
+
+            <p>
+              None of the four is a verdict on what you can do. They are inputs.
+              What they mean depends on what you are trying to do with your
+              body, which is why we ask about that before the testing rather
+              than after. Two of them may be where they should be and two well
+              short. One side may be years ahead of the other. That is normal,
+              and it is the reason the report puts them in an order rather than
+              adding them up.
             </p>
           </div>
         </div>
 
-        <div className="border-t border-[var(--bs-border)]">
-          {forceRows.map((row) => (
-            <article
-              key={row.number}
-              className="grid gap-4 border-b border-[var(--bs-border)] border-l-2 border-l-transparent py-6 transition-all duration-200 hover:border-l-[var(--bs-indigo)] hover:bg-white hover:shadow-[0_4px_18px_rgba(0,0,0,0.03)] md:grid-cols-[42px_1fr_118px]"
-            >
-              <div className="bs-mono text-[12px] text-[var(--bs-grey-500)]">
-                {row.number}
-              </div>
+        <div className="mt-14 max-w-[760px]">
+          <h3
+            className="uppercase text-[clamp(28px,3vw,38px)] font-semibold leading-none text-[var(--bs-ink)]"
+            style={{
+              fontFamily: "var(--font-antonio), Antonio, sans-serif",
+            }}
+          >
+            On grip
+          </h3>
 
-              <div>
-                <h3 className="text-[20px] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--bs-ink)]">
-                  {row.title}
-                </h3>
+          <p className="mt-5 text-[16px] leading-[1.65] text-[var(--bs-grey-800)]">
+            Most longevity screening reaches for grip as a stand-in for
+            whole-body strength. Grip predicts about as reliably as anything in
+            medicine. But grip predicts, it does not instruct. Squeezing a
+            dynamometer harder does not extend a life. So we measure grip, and
+            we also measure force directly, limb by limb, because that is the
+            part you can actually train.
+          </p>
+        </div>
 
-                <p className="mt-2 max-w-[520px] text-[13px] leading-[1.65] text-[var(--bs-grey-700)]">
-                  {row.description}
-                </p>
+        <div className="mt-9 flex flex-wrap gap-3">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center bg-[var(--bs-ink)] px-5 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-[var(--bs-grey-800)]"
+          >
+            Book an assessment
+          </a>
 
-                <p className="bs-mono mt-5 text-[11px] uppercase tracking-[0.12em] text-[var(--bs-grey-600)]">
-                  {row.meta}
-                </p>
-
-                <p className="bs-mono mt-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--bs-grey-600)]">
-                  {row.retest}
-                </p>
-              </div>
-
-              <div className="md:justify-self-end">
-                <span
-                  className={`inline-flex whitespace-nowrap px-4 py-2 bs-mono text-[10px] font-bold uppercase tracking-[0.18em] ${
-                    row.tone === "warn"
-                      ? "bg-[var(--bs-warn-soft)] text-[var(--bs-warn)]"
-                      : row.tone === "neutral"
-                      ? "bg-[var(--bs-grey-100)] text-[var(--bs-grey-600)]"
-                      : "bg-[var(--bs-indigo-soft)] text-[var(--bs-indigo-deep)]"
-                  }`}
-                >
-                  {row.badge}
-                </span>
-              </div>
-            </article>
-          ))}
+          <a
+            href="/method#report"
+            className="inline-flex items-center justify-center border border-[var(--bs-ink)] px-5 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.1em] text-[var(--bs-ink)] transition-colors hover:bg-[var(--bs-grey-100)]"
+          >
+            See a sample report
+          </a>
         </div>
       </div>
     </section>
