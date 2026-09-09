@@ -141,13 +141,6 @@ export default function AboutPage() {
               </p>
 
               <p>
-                Some of the people we assess arrive roughly where I was. Some
-                are fine and intend to stay that way. The measurement is the
-                same either way. What changes is what it is for, and how much
-                room is left to work with.
-              </p>
-
-              <p>
                 I spent twenty-one years at EY and left as a partner. Basal
                 Strength came after, but the work behind it started at forty, on
                 my own body. I am not a clinician. That is why a physical

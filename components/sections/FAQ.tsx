@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "What if I need someone to treat me, or to train me?",
     answer:
-      "We keep a network of physicians, physical therapists and trainers in Austin we trust, who know how to read our reports, and we will introduce you. No referral fee moves in either direction, for the introduction or for anything that follows it, and we do not pay for clients. The assessment has a price and that is the whole basis of payment. That is what keeps the report neutral about where you go next.",
+      "We keep a network of physicians, physical therapists and trainers in Austin we trust, who know how to read our reports, and we will introduce you. We accept no commission or referral fee for any introduction we make, and we do not pay for clients. We are paid for the assessment and nothing else.",
   },
   {
     question: "Do I need a referral?",
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "What happens after the test?",
     answer:
-      "The report is walked through live rather than emailed and abandoned, and a retest date is set before you leave, twelve to sixteen weeks out. At the retest we compare you to you. Every measure carries a margin of error, and we only call something a change when it clears that margin.",
+      "We walk you through the report together and set a retest date, twelve to sixteen weeks out. At the retest we measure the areas you were working on and say whether the change clears the measure's margin of error.",
   },
   {
     question: "What if a test is not safe for me?",
@@ -43,9 +43,10 @@ export function FAQ() {
         </span>
 
         <h2
-          className="mt-[18px] max-w-[19ch] uppercase text-[clamp(30px,4vw,54px)] font-semibold leading-[0.95] tracking-[-0.01em] text-[var(--bs-ink)]"
+          className="mt-[18px] max-w-[19ch] text-[clamp(30px,4vw,54px)] uppercase leading-[0.95] tracking-[-0.01em]"
           style={{
             fontFamily: "var(--font-antonio), Antonio, sans-serif",
+            fontWeight: 600,
           }}
         >
           Where we stop, and what happens after.
@@ -53,15 +54,15 @@ export function FAQ() {
 
         <div className="mt-[30px] grid max-w-[820px] gap-[26px]">
           {faqs.map((faq) => (
-            <article key={faq.question}>
-              <h3 className="mb-2 text-[18px] font-semibold leading-[1.3] text-[var(--bs-ink)]">
+            <div key={faq.question}>
+              <h3 className="mb-2 text-[18px] font-semibold text-[var(--bs-ink)]">
                 {faq.question}
               </h3>
 
               <p className="text-[15.5px] leading-[1.6] text-[var(--bs-grey-600)]">
                 {faq.answer}
               </p>
-            </article>
+            </div>
           ))}
         </div>
       </div>

@@ -96,10 +96,6 @@ export default function MethodPage() {
 
             <div className="mt-7 max-w-[64ch] text-[17px] leading-[1.6] text-[var(--bs-grey-800)]">
               <p>
-                A half-hour intake to learn about you. A two-hour test of joint
-                measures, jumps, and lifts tailored to your ability. A written
-                report detailing what we found and how we know, and you come
-                back in twelve to sixteen weeks to measure what changed.
                 Everything gets written down, including what we could not
                 measure, and every number you are compared against has a source
                 we name.
@@ -137,10 +133,10 @@ export default function MethodPage() {
             </div>
 
             <p className="mt-[26px] max-w-[66ch] border-l-2 border-[var(--bs-indigo)] pl-4 text-[15px] leading-[1.6] text-[var(--bs-grey-600)]">
-              The protocol bends to you. If a test is not safe for you, we do
-              not run it, and the report says which one and why. If no published
-              reference exists for someone your age and sex, we say the
-              comparison was constructed, and name what it was built from.
+              We change the protocol to fit you. If a test is not safe for you,
+              we do not run it, and the report says which one and why. If no
+              published reference exists for someone your age and sex, we say
+              the comparison was constructed, and name what it was built from.
             </p>
           </div>
         </section>
@@ -166,17 +162,13 @@ export default function MethodPage() {
             <div className="mt-12 grid gap-[60px] lg:grid-cols-2 lg:items-start">
               <div className="max-w-[64ch] space-y-4 text-[17px] leading-[1.6] text-[var(--bs-grey-800)]">
                 <p>
-                  A written report from the person who ran the session. Where
-                  you stand on each of the four parts of strength, what is
-                  limiting each, what to fix first, and when we measure again.
-                  Your physician, your physical therapist and your trainer read
-                  the same document. Raw data and every reference population are
-                  in the back.
+                  The report comes from the person who ran the session, and the
+                  raw data and every reference population are in the back.
                 </p>
 
                 <p>
                   Sometimes the answer is that something is not within reach, or
-                  not yet. Sometimes it is that the thing you were worried about
+                  not yet. Sometimes it is that what you came in worried about
                   is already fine. The report says either one plainly, and says
                   what to do about the rest. You will not finish it cured, and
                   nobody will tell you the plan is conservative because they
@@ -251,23 +243,21 @@ export default function MethodPage() {
             <div className="mt-7 flex max-w-[64ch] flex-col gap-4 text-[17px] leading-[1.6] text-[var(--bs-grey-800)]">
               <p>
                 Force plates are precise, and precision is not the hard part. A
-                plate records one moment. It cannot ask what you are afraid of.
-                It cannot weigh a number against your medication list. It cannot
-                tell you what has changed since last time, because it only ever
-                records now.
+                plate records one moment, and that record does not include your
+                fears, your medications, or what has changed since last time.
               </p>
 
               <p className="text-[20px] font-medium text-[var(--bs-ink)]">
-                Three people do that. Two are in the room with you. The third is
-                a physician: the one whose practice you came through, or your
-                own.
+                Three people hold what the plate does not. Two are in the room
+                with you. The third is a physician: the one whose practice you
+                came through, or your own.
               </p>
             </div>
 
             <div className="mt-12 grid gap-px border border-[var(--bs-grey-200)] bg-[var(--bs-grey-200)] lg:grid-cols-3">
               <article className="flex flex-col gap-3 bg-white px-7 py-8">
                 <span className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--bs-indigo-deep)]">
-                  The measurement and the report
+                  Runs the session and writes the report
                 </span>
 
                 <h3
@@ -292,10 +282,10 @@ export default function MethodPage() {
                 </p>
 
                 <p className="text-[14.5px] leading-[1.6] text-[var(--bs-grey-600)]">
-                  I ask what you are training for, what hurts, what you are
-                  afraid of, and what you would like to still be doing in twenty
-                  years. I ask while we are testing, not on a form. Without it,
-                  the numbers have nothing to be measured against.
+                  I ask about your training and your injuries, what worries you,
+                  and what you would like to still be doing in twenty years. I
+                  ask while we are testing, not on a form. Without it, the
+                  numbers have nothing to be measured against.
                 </p>
 
                 <p className="text-[14.5px] leading-[1.6] text-[var(--bs-grey-600)]">
@@ -315,7 +305,7 @@ export default function MethodPage() {
 
               <article className="flex flex-col gap-3 bg-white px-7 py-8">
                 <span className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--bs-indigo-deep)]">
-                  The hands and the eye
+                  Safety and how you move
                 </span>
 
                 <h3
@@ -342,8 +332,8 @@ export default function MethodPage() {
                   While you work, he is watching your mechanics. A person
                   watching sees the side that gives out only once you are tired,
                   the form that changes as load climbs, and the compensation
-                  that means something you have not mentioned. Nothing gets
-                  written down until it matches what he saw.
+                  that points to an old injury you did not think to mention.
+                  Nothing gets written down until it matches what he saw.
                 </p>
 
                 <div className="mt-auto border-t border-[var(--bs-grey-200)] pt-4 text-[14px] leading-[1.55] text-[var(--bs-ink)]">
@@ -351,14 +341,13 @@ export default function MethodPage() {
                     What he does
                   </b>
                   Takes the measurements, guards your form, holds every test
-                  inside your ability, and is the eye on the body that no
-                  instrument can be.
+                  inside your ability, and sees what no instrument records.
                 </div>
               </article>
 
               <article className="flex flex-col gap-3 bg-white px-7 py-8">
                 <span className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--bs-indigo-deep)]">
-                  The whole picture
+                  Everything else in your health
                 </span>
 
                 <h3
@@ -383,9 +372,8 @@ export default function MethodPage() {
                   When the assessment runs inside a physician&apos;s practice,
                   that physician reviews your conditions before the day, can
                   change what we test because of them, and reads the findings
-                  before you do. When you book directly, we provide a report
-                  designed with the information a physician needs, written to be
-                  read next to their own workup.
+                  before you do. When you book directly, the report is written
+                  to be read next to their workup.
                 </p>
 
                 <div className="mt-auto border-t border-[var(--bs-grey-200)] pt-4 text-[14px] leading-[1.55] text-[var(--bs-ink)]">
@@ -401,8 +389,7 @@ export default function MethodPage() {
             <div className="mt-7 flex max-w-[64ch] flex-col gap-4 text-[17px] leading-[1.6] text-[var(--bs-grey-800)]">
               <p className="text-[20px] font-medium text-[var(--bs-ink)]">
                 Precision is what the instruments give us, and it is the part
-                you can buy. Everything after it is people, and it is not
-                optional.
+                you can buy.
               </p>
 
               <p>

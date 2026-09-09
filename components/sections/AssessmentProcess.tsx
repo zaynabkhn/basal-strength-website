@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 const reasons = [
   {
     quote: '"I want to still be doing all of this at 70."',
     answer:
-      "How fast the ceiling is dropping, and how much of the descent is still yours to reverse.",
+      "How fast you are losing strength, and how much of the loss is still yours to reverse.",
   },
   {
     quote: '"I keep getting hurt and I don\'t know why."',
@@ -53,18 +55,19 @@ export function AssessmentProcess() {
         </span>
 
         <h2
-          className="mt-[18px] max-w-[19ch] uppercase text-[clamp(30px,4vw,54px)] font-semibold leading-[0.95] tracking-[-0.01em] text-[var(--bs-ink)]"
+          className="mt-[18px] max-w-[19ch] text-[clamp(30px,4vw,54px)] uppercase leading-[0.95] tracking-[-0.01em]"
           style={{
             fontFamily: "var(--font-antonio), Antonio, sans-serif",
+            fontWeight: 600,
           }}
         >
           Different reasons. One question.
         </h2>
 
-        <ul className="mt-[26px] grid max-w-[900px] list-none grid-cols-1 gap-x-10 gap-y-[14px] p-0 md:grid-cols-2">
-          {reasons.map((item) => (
-            <li
-              key={item.quote}
+        <div className="mt-[26px] grid max-w-[900px] grid-cols-2 gap-x-10 gap-y-[14px] max-[720px]:grid-cols-1">
+          {reasons.map((reason) => (
+            <div
+              key={reason.quote}
               className="border-l-2 border-[var(--bs-indigo)] pl-[14px]"
             >
               <p
@@ -74,38 +77,42 @@ export function AssessmentProcess() {
                     "var(--font-gelasio), Gelasio, Georgia, serif",
                 }}
               >
-                {item.quote}
+                {reason.quote}
               </p>
 
-              <span className="mt-[6px] block text-[14px] not-italic leading-[1.5] text-[var(--bs-grey-600)]">
-                {item.answer}
-              </span>
-            </li>
+              <p className="mt-[6px] text-[14px] leading-[1.5] text-[var(--bs-grey-600)]">
+                <span className="mr-2 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--bs-indigo)]">
+                  What we measure ·
+                </span>
+                {reason.answer}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
 
         <h3
-          className="mt-[38px] max-w-[22ch] uppercase text-[clamp(24px,3vw,40px)] font-semibold leading-[0.95] tracking-[-0.01em] text-[var(--bs-ink)]"
+          className="mt-[38px] max-w-[22ch] text-[clamp(24px,3vw,40px)] uppercase leading-[0.95]"
           style={{
             fontFamily: "var(--font-antonio), Antonio, sans-serif",
+            fontWeight: 600,
           }}
         >
           How strong do I need to be to do the things I love, and for how long?
         </h3>
 
-        <p className="mt-[18px] max-w-[64ch] text-[17px] leading-[1.6] text-[var(--bs-grey-800)]">
-          That is the question this company was started on, and it can be
-          measured. The assessment is the same for all eight. What changes is
-          what the measurement is for.
+        <p className="mt-[18px] max-w-[64ch] text-[16px] leading-[1.6] text-[var(--bs-grey-800)]">
+          That is the question this company was started on. The answer begins
+          with a measurement. The assessment is the same for all eight. What
+          changes is what the measurement is for.
         </p>
 
         <div className="mt-9">
-          <a
+          <Link
             href="#contact"
-            className="inline-block bg-[var(--bs-ink)] px-[22px] py-[14px] font-mono text-[12px] font-medium uppercase tracking-[0.1em] text-white transition-colors hover:bg-[var(--bs-grey-800)]"
+            className="inline-flex min-h-[52px] items-center border border-[var(--bs-ink)] bg-[var(--bs-ink)] px-[22px] font-mono text-[12px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-[var(--bs-grey-800)]"
           >
             Book an assessment
-          </a>
+          </Link>
         </div>
       </div>
     </section>
