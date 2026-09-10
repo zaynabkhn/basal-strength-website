@@ -19,13 +19,6 @@ export function Contact() {
           will keep letting you, I would like to talk.
         </h2>
 
-        <p className="mt-[14px] max-w-[64ch] text-[13px] leading-[1.6] text-[var(--bs-grey-400)]">
-          Two fields, not a questionnaire: what you want your body to keep
-          doing, and where it is not cooperating.
-          <br />
-          Referred by someone? Say who sent you and skip the rest.
-        </p>
-
         <div className="mt-9 flex flex-wrap gap-3">
           <a
             href="https://tally.so/r/xXZ055"
@@ -34,13 +27,6 @@ export function Contact() {
             className="inline-flex min-h-[52px] items-center border border-[var(--bs-indigo)] bg-[var(--bs-indigo)] px-[22px] font-mono text-[12px] uppercase tracking-[0.1em] text-[var(--bs-ink)] transition-opacity hover:opacity-90"
           >
             I want an assessment
-          </a>
-
-          <a
-            href="mailto:fayazjaffer@basalstrength.com"
-            className="inline-flex min-h-[52px] items-center border border-white px-[22px] font-mono text-[12px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
-          >
-            I am a physician or practitioner
           </a>
         </div>
 

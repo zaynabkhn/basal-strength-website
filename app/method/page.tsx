@@ -180,14 +180,7 @@ export default function MethodPage() {
                   NHANES, VALD, and published norms. Every source is cited.
                 </p>
 
-                <div className="pt-5">
-                  <a
-                    href="#contact"
-                    className="inline-block border border-[var(--bs-ink)] px-[22px] py-[14px] font-mono text-[12px] uppercase tracking-[0.1em] text-[var(--bs-ink)]"
-                  >
-                    Read a de-identified report
-                  </a>
-                </div>
+                
               </div>
 
               <div className="bg-[var(--bs-ink)] px-[30px] py-[34px] text-white">
