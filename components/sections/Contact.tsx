@@ -21,7 +21,7 @@ export function Contact() {
 
         <div className="mt-9 flex flex-wrap gap-3">
           <a
-            href="https://tally.so/r/xXZ055"
+            href="https://form.jotform.com/262526298913062"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-[52px] items-center border border-[var(--bs-indigo)] bg-[var(--bs-indigo)] px-[22px] font-mono text-[12px] uppercase tracking-[0.1em] text-[var(--bs-ink)] transition-opacity hover:opacity-90"

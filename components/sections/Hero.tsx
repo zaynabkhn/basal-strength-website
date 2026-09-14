@@ -16,7 +16,7 @@ export function Hero() {
         />
 
         <div className="mt-[22px] font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--bs-indigo)]">
-          Strength assessment · Austin, Texas
+          Strength Assessment for Longevity Medicine · Austin, Texas
         </div>
 
         <h1
