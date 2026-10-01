@@ -159,8 +159,7 @@ export function PartnerEcosystem() {
         </p>
 
         <p className="mt-4 max-w-[64ch] text-[16px] font-medium leading-[1.6] text-[var(--bs-ink)]">
-          Together, the four form the layer everything you love stands on.
-          Medicine already has a word for it: basal. The level underneath, the
+          Together, the four form the layer everything you love stands on. The level underneath, the
           one that has to be there before anything built on it holds. It is
           where the name comes from.
         </p>
