@@ -41,7 +41,7 @@ const antonio = Antonio({
 
 export const metadata: Metadata = {
   title: "Basal Strength",
-  description: "Diagnostic strength assessment.",
+  description: "The Strength Assessment, by Basal Strength.",
 };
 
 export default function RootLayout({
